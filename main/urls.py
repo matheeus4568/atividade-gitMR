@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from matheusraquel.views import matheus
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('matheus/',matheus,name='matheus'),
 ]
